@@ -9,6 +9,7 @@ def compute_matches_in_path_list(files_list, csv_folder='results/'):
     if not isinstance(files_list, list):
         raise TypeError('files_list is not a list')
     
+    os.makedirs(csv_folder, exist_ok=True)
     
     csv_name=files_list[0].split('/')[-4]+'_'+files_list[0].split('/')[-3]+'.csv'
 
@@ -19,9 +20,7 @@ def compute_matches_in_path_list(files_list, csv_folder='results/'):
     img1 = cv2.imread(files_list[0], cv2.IMREAD_GRAYSCALE)  # queryImage
     
     match_dict={}
-    
-    
-    
+        
     for file_counter in tqdm(range(len(files_list))):
         # print(f'file: {files_list[file_counter]}')
         img2_name = files_list[file_counter].split('/')[-1]
