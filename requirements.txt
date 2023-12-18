@@ -1,0 +1,6 @@
+natsort
+pandas
+opencv-python
+scikit-image
+numpy
+tqdm
