@@ -1,4 +1,4 @@
-mkdir "abandonedfactory_easy" "abandonedfactory_night_easy" "hospital_easy" "oldtown_hard"
+mkdir "dataset/abandonedfactory_easy" "dataset/abandonedfactory_night_easy" "dataset/hospital_easy" "dataset/oldtown_hard"
 
 wget -P "abandonedfactory_easy/" http://airlab-share.andrew.cmu.edu/tartanair/abandonedfactory/Easy/image_left.zip
 # wget -P "abandonedfactory_easy/" http://airlab-share.andrew.cmu.edu/tartanair/abandonedfactory/Easy/image_right.zip
